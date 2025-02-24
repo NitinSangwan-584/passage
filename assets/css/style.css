@@ -6,7 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    object-fit: cover;
+    /* min-height: 810px; */
 }
 
 /*-------------------------------------- max-width------------------------------------ */
@@ -324,6 +324,15 @@
     grid-column: 2/3;
 }
 
+/* -------------------------------------------ready section------------------------------------------------------ */
+.ready-bg {
+    background-image: url(../img/png/ready-bg-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
 /* my-btn */
 .myBtn {
     display: none;
@@ -416,7 +425,9 @@
     .heading {
         left: 5%;
     }
-
+    .ready-bg {
+        min-height: 300px;
+    }
     .lh-56 {
         line-height: 30px;
         /* line-height:normal; */
