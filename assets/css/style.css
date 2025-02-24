@@ -9,7 +9,7 @@
     object-fit: cover;
 }
 
-/* max-width */
+/*-------------------------------------- max-width------------------------------------ */
 .max-w-1140 {
     max-width: 1140px;
 }
@@ -22,7 +22,7 @@
     max-width: 379px;
 }
 
-/* line-height */
+/* -------------------------------------line-height------------------------------------------- */
 .lh-18 {
     line-height: 18.96px;
 }
@@ -43,7 +43,7 @@
     gap: 24px;
 }
 
-/* margin padding */
+/* --------------------------------------------margin padding------------------------------------------ */
 .ml-16 {
     margin-left: 16px;
 }
@@ -76,7 +76,7 @@
     padding-bottom: 14px;
 }
 
-/* hero section */
+/* ------------------------------------------------hero section------------------------------ */
 .heading {
     top: 15%;
     left: 10%;
@@ -96,7 +96,7 @@
     margin-bottom: 16.18px;
 }
 
-/* navbar */
+/* -----------------------------------------------navbar-------------------------- */
 .btn {
     border-radius: 51px;
     transition: all 0.3s ease-in-out;
@@ -153,6 +153,132 @@
     opacity: 0;
 }
 
+/*---------------------------------------------------- card section------------------------------------- */
+.max-w-643 {
+    max-width: 643px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.max-w-244 {
+    max-width: 244px;
+}
+
+.card {
+    border-radius: 30px;
+    /* padding: 20px 30px; */
+}
+
+.opacity-15 {
+    opacity: 15%;
+}
+
+.lh-48 {
+    line-height: 48px;
+}
+
+.card-heading {
+    top: 2%;
+    left: 12%;
+}
+
+.card-content {
+    bottom: 5%;
+    left: 12%;
+}
+
+.ellips {
+    max-width: 405px;
+    min-height: 405px;
+    top: 265px;
+    left: -71px;
+    border-width: 1px;
+    border: 1px solid #FFFFFF33;
+    /* backdrop-filter: blur(15px);
+     */
+    background: var(--color-blue) !important;
+    background: #006EE60A;
+    /* bottom: 5%;
+    left: 14%; */
+}
+
+.card-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-container:hover {
+    transform: translateY(-50px);
+}
+
+.card-container:hover .card-heading {
+    top: auto;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.card-container img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hide overlay initially */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: #00000066;
+    border: 1px solid #FFFFFF33;
+    backdrop-filter: blur(30px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* Hide card content */
+.card-content {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* On hover */
+.card-container:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-container:hover .card-content {
+    opacity: 0;
+}
+
+.card-container:hover .overlay {
+    opacity: 5;
+}
+
+.card-container:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
 /* my-btn */
 .myBtn {
     display: none;
@@ -193,6 +319,13 @@
     .lh-56 {
         line-height: 40px;
     }
+
+    .mt-100 {
+        margin-top: 80px;
+    }
+    .mb-100 {
+        margin-bottom: 80px;
+    }
 }
 
 @media (max-width:767.98px) {
@@ -203,6 +336,13 @@
     .lh-56 {
         line-height: 30px;
         /* line-height:normal; */
+    }
+
+    .mt-100 {
+        margin-top: 40px;
+    }
+    .mb-100 {
+        margin-bottom: 40px;
     }
 
     .mb-20 {
@@ -217,6 +357,13 @@
 @media (max-width:575.98px) {
     .heading {
         left: 2%;
+    }
+
+    .mt-100 {
+        margin-top: 10px;
+    }
+    .mb-100 {
+        margin-bottom: 10px;
     }
 
     .lh-56 {
