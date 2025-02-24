@@ -20,9 +20,9 @@
 
 <body>
     <!-- header -->
-    <header class="min-vh-100  d-flex flex-column justify-content-center bg-img">
-        <nav class="py-16 w-100 nav-shadow mx-auto nav-bg position-fixed top-0 z-3">
-            <div class="container max-w-1177">
+    <header class="min-vh-100  d-flex flex-column justify-content-center bg-img ">
+        <nav class="py-16 w-100 nav-shadow mx-auto shadow-blur position-fixed top-0 z-3">
+            <div class="container max-w-1140">
                 <div class="d-flex align-items-center justify-content-between w-100">
                     <a href="https://passage.com/en/" target="_blank"><img src="./assets/img/svg/page-logo.svg"
                             class="page-logo" alt="page-logo"></a>
@@ -37,10 +37,9 @@
                                 href="#">Contact</a>
                         </li>
                         <button
-                            class="font-family-primary position-relative z-2 bg-blue ml-16 fw-medium fs-6 lh-18 btn text-white"
+                            class="font-family-primary z-2 bg-blue py-14 px-16 ml-16 fw-medium fs-6 lh-18 btn text-white"
                             type="button">Get Started</button>
                     </ul>
-
                     <div onclick="navbarbtn()" class="z-5 d-block d-lg-none cursor-pointer">
                         <span class="menu-lines" id="rotates"></span>
                         <span class="menu-lines" id="transparent"></span>
@@ -49,17 +48,43 @@
                 </div>
             </div>
         </nav>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <div class="flex-grow-1 d-flex justify-content-center align-items-center position-relative">
+            <div class="container max-w-1140">
+                <h1
+                    class="font-family-primary fw-bold text-xl mb-0 lh-56 max-w-679 position-absolute heading text-white">
+                    We help leading enterprises
+                    use
+                    <span class="color-blue">emerging technology</span> to reach their goals faster
+                </h1>
+                <div class="position-absolute contant gap-5 mb-30 justify-content-center d-flex align-items-center">
+                    <div class="mb-0">
+                        <p class="font-family-primary fw-normal fs-6 lh-24 text-white max-w-379 mb-20">Eu tincidunt vel
+                            orci
+                            aliquam vitae nibh
+                            tellus tortor mauris pharetra nec senectus egestas enim.</p>
+                        <button class="font-family-primary bg-blue mb-0 py-14 px-24 fw-medium fs-6 lh-18 btn text-white"
+                            type="button">Talk to us</button>
+                    </div>
+                    <div>
+                        <button class="shadow-blur scroll-btn" type="button"><img src="./assets/img/svg/btn-arrow.svg"
+                                alt=""></button>
+                        <p class="font-family-primary mb-0 fw-normal fs-6 lh-24 text-white opacity-70">Scroll Down</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-            integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="./assets/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>

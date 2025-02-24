@@ -8,7 +8,7 @@
     --color-white: white;
     --color-black: #000000;
     --color-black-2: #1D1D1B;
-    --color-voilet:#4A4C7B;
+    --color-voilet: #4A4C7B;
     --color-grey: #8F9090;
     --color-blue: #006EE6;
     --color-yellow: #EBA82C;
@@ -91,15 +91,18 @@
 
 @media (max-width:991.98px) {
     :root {
-        --text-xl: 64px;
+        --text-xl: 40px;
+    }
+}
+
+@media (max-width:767.98px) {
+    :root {
+        --text-xl: 32px;
     }
 }
 
 @media (max-width:575.98px) {
     :root {
-        --text-xl: 48px;
-        --text-md: 30px;
-        --text-lg: 28px;
-        --text-base: 21px;
+        --text-xl: 24px;
     }
 }
