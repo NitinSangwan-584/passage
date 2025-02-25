@@ -6,6 +6,12 @@ const navbarbtn = () => {
     document.getElementById("rotates2").classList.toggle("rotate-45")
     document.body.classList.toggle("overflow-hidden")
 }
+window.addEventListener("scroll", function () {
+    let navbar = document.querySelector(".nav-shadow");
+    navbar.classList.toggle("scrolled", window.scrollY > 50);
+});
+
+
 //------------------------------------------------slider---------------------------------------------
 $('.slider-content').slick({
     infinite: true,

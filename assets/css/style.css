@@ -145,6 +145,17 @@
     transition: all 0.3s ease-in-out;
 }
 
+.nav-shadow {
+    background-color: transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-shadow.scrolled {
+    background-color: var(--color-voilet);
+    border: 1px solid #FFFFFF33;
+}
+
+
 .btn:hover {
     background: var(--color-white);
     color: var(--color-blue) !important;
@@ -389,12 +400,12 @@
 }
 
 /* ---------------------------------------------------faq------------------------------- */
-.pb-80 {
-    padding-bottom: 80px;
-}
-
 .lh-26 {
     line-height: 26.4px;
+}
+
+.pb-80 {
+    padding-bottom: 80px;
 }
 
 .pt-130 {
@@ -592,8 +603,24 @@
         margin-top: 80px;
     }
 
+    .pb-80 {
+        padding-bottom: 60px;
+    }
+
+    .mt-115 {
+        margin-top: 80px;
+    }
+
+    .pt-130 {
+        padding-top: 80px;
+    }
+
     .mb-100 {
         margin-bottom: 80px;
+    }
+
+    .pb-164 {
+        padding-bottom: 120px;
     }
 
     .grid-card {
@@ -647,7 +674,22 @@
 
     .lh-56 {
         line-height: 30px;
-        /* line-height:normal; */
+    }
+
+    .pb-164 {
+        padding-bottom: 80px;
+    }
+
+    .mt-115 {
+        margin-top: 50px;
+    }
+
+    .pb-80 {
+        padding-bottom: 40px;
+    }
+
+    .pt-130 {
+        padding-top: 40px;
     }
 
     .mt-100 {
@@ -697,7 +739,9 @@
     .heading {
         left: 2%;
     }
-
+    .pb-164 {
+        padding-bottom: 20px;
+    }
     .mt-100 {
         margin-top: 10px;
     }
