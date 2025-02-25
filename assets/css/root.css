@@ -1,6 +1,7 @@
 :root {
     --font-family-primary: "Rubik", serif;
     --font-family-secondary: "Poppins", serif;
+    --font-family-3: "Inter", serif;
     --text-sm: 16px;
     --text-base: 20px;
     --text-md: 24px;
@@ -21,6 +22,10 @@
 
 .font-family-secondary {
     font-family: var(--font-family-secondary);
+}
+
+.font-family-3 {
+    font-family: var(--font-family-3);
 }
 
 .text-sm {

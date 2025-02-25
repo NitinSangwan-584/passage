@@ -7,23 +7,13 @@ const navbarbtn = () => {
     document.body.classList.toggle("overflow-hidden")
 }
 //------------------------------------------------slider---------------------------------------------
-$('.my-slider').slick({
-    dots: false,
+$('.slider-content').slick({
     infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    prevArrow: ".previous",
-    nextArrow: ".next",
-    responsive: [
-        {
-            breakpoint: 992,
-            settings: {
-                autoplay: true,
-                autoplaySpeed: 2000,
-            }
-        },
-    ]
+    // autoplay: true,
+    autoplaySpeed: 2000,
+    dots: true,
+    prevArrow: false,
+    nextArrow: false,
 });
 //----------------------------------------------back to top------------------------------------------------
 const mybutton = document.getElementById("myBtn");
